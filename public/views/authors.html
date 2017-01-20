@@ -1,0 +1,20 @@
+<div>
+	<h1> About </h1>
+
+	<div class="rows">
+
+		<div style="border: 1px solid black; height: 200px;" class="col-md-4">
+			<h4> Authors : </h4> </hr>
+			<div ui-view="auth">
+				<ul>
+					<li ng-repeat="author in authors"><a ui-sref=".contacts({authorName: author})">{{author}}</a></li>
+				</ul>
+			</div>
+		</div>
+		<div style="border: 1px solid black; height: 200px;" class="col-md-8">
+			<h4> Contact Details : </h4> </hr>
+			<div ui-view="conts"></div>
+		</div>
+	</div>
+	
+</div>
